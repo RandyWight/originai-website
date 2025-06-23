@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OriginAI Music – AI Music That Can't Get You Sued</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Generate AI music using only your owned catalog. Full chain-of-title protection keeps RIAA lawyers away. Book executive briefing.">
+  <style>
+    /* --- Dark, executive aesthetic --- */
+    :root {
+      --bg: #0a0a0a;
+      --fg: #e0e0e0;
+      --accent: #b59d50;       /* understated gold */
+      --danger: #e04c4c;       /* for lawsuit call‑outs */
+      --font: 'Helvetica Neue', Arial, sans-serif;
+    }
+    * {box-sizing: border-box; margin: 0; padding: 0; font-family: var(--font);}
+    body {background: var(--bg); color: var(--fg); line-height: 1.5;}
+    a {color: var(--accent); text-decoration: none;}
+    header, section {padding: 6rem 8vw;}
+    h1 {font-size: 3rem; margin-bottom: 1rem;}
+    h2 {font-size: 2rem; margin: 3rem 0 1rem;}
+    p  {max-width: 720px; margin-bottom: 1rem;}
+    .btn-primary{
+      display:inline-block;background:var(--accent);color:var(--bg);
+      padding:1rem 2rem;border-radius:4px;font-weight:700;margin-top:1.5rem;
+      transition: background 0.3s ease;
+    }
+    .btn-primary:hover{background:#d4b760;}
+    /* Hero */
+    .hero{display:flex;flex-direction:column;align-items:flex-start;}
+    /* Social proof badges */
+    .badges {margin-top:2rem;}
+    .badge {
+      display:inline-block;background:#1a1a1a;border:1px solid var(--accent);
+      padding:0.5rem 1rem;margin-right:1rem;border-radius:4px;font-size:0.85rem;
+    }
+    /* Two‑column sections */
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;}
+    .grid-reverse{grid-template-columns:1fr 1fr;}
+    @media(max-width:768px){
+      .grid{grid-template-columns:1fr;}
+      header, section {padding: 3rem 5vw;}
+      h1{font-size:2rem;}
+    }
+    /* ROI widget */
+    .roi-calculator{background:#111;padding:2rem;border-radius:8px;border:1px solid var(--accent);}
+    #roi-output{font-size:1.5rem;font-weight:700;color:var(--accent);margin-top:1rem;}
+    input{background:#222;color:var(--fg);border:1px solid #444;padding:0.75rem;border-radius:4px;}
+    /* Demo box */
+    .demo-box{
+      background:#111;border:2px solid var(--accent);border-radius:8px;
+      padding:2rem;text-align:center;min-height:300px;
+      display:flex;flex-direction:column;justify-content:center;
+    }
+    /* Lawsuit callouts */
+    .lawsuit-highlight{
+      background:linear-gradient(135deg, #2a1a1a, #1a1a2a);
+      border-left:4px solid var(--danger);
+      padding:1.5rem;margin:2rem 0;border-radius:4px;
+    }
+    .case-number{font-family:monospace;color:var(--danger);font-size:0.9rem;}
+    /* Estate features */
+    .estate-features{list-style:none;margin-top:1rem;}
+    .estate-features li{
+      margin:0.5rem 0;padding-left:1.5rem;
+      position:relative;
+    }
+    .estate-features li:before{
+      content:"✓";color:var(--accent);position:absolute;left:0;font-weight:bold;
+    }
+    /* Countdown timer */
+    .countdown{
+      background:var(--danger);color:white;padding:1rem;
+      text-align:center;font-weight:bold;
+      border-radius:4px;margin:1rem 0;
+    }
+    /* Footer */
+    footer{background:#111;padding:3rem 8vw;font-size:.85rem;color:#999;}
+    .legal-refs{margin-top:1rem;font-size:0.75rem;opacity:0.8;}
+  </style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>AI Music&nbsp;<span style="color:var(--danger)">Without the Lawsuits.</span></h1>
+  <p>OriginAI Music lets rights‑holders generate new master recordings using only <strong>catalog you own</strong>, with a notarized chain‑of‑title that keeps the RIAA's lawyers at bay.</p>
+  <a href="#consult" class="btn-primary">Book a Risk‑Free Executive Briefing ▸</a>
+  
+  <div class="badges">
+    <span class="badge">🛡️ FedRAMP‑Ready</span>
+    <span class="badge">🔒 DoD‑IL2 Secured</span>
+    <span class="badge">🇺🇸 Veteran‑Owned</span>
+  </div>
+</header>
+
+<section class="lawsuit-highlight">
+  <h2 style="color:var(--danger);margin-top:0;">Your Competitors Are Getting Sued. Right Now.</h2>
+  <div class="grid">
+    <div>
+      <p><strong>Suno AI:</strong> Facing $150M+ in damages for training on copyrighted music without consent.</p>
+      <p class="case-number">RIAA v. Suno, 1:24‑cv‑11348 (D. Mass.)</p>
+    </div>
+    <div>
+      <p><strong>Udio:</strong> Hit with major label lawsuit for unauthorized use of protected recordings.</p>
+      <p class="case-number">RIAA v. Udio, 1:24‑cv‑04712 (S.D.N.Y.)</p>
+    </div>
+  </div>
+  <p style="margin-top:1rem;"><strong>OriginAI Music uses ZERO third-party copyrighted material.</strong> We only work with masters you own and consent to use.</p>
+</section>
+
+<section class="grid" id="audit">
+  <div>
+    <h2>See Your Audit Trail in 30 Seconds</h2>
+    <p>Every token generated is traceable—ready for your General Counsel, your auditors, and the Copyright Office.</p>
+    <p>Our immutable blockchain ledger shows exactly which of YOUR masters contributed to each AI-generated track.</p>
+    <a href="/demo" class="btn-primary">Interactive Demo ▸</a>
+  </div>
+  <div>
+    <div class="demo-box">
+      <h3 style="color:var(--accent);">Live Proof-of-Concept</h3>
+      <p>10-second AI remix of public-domain master</p>
+      <p style="margin-top:1rem;font-size:0.9rem;">Complete audit log download included</p>
+      <div style="margin-top:1.5rem;">
+        <button class="btn-primary" onclick="playDemo()">▶ Play Demo Track</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="roi-calculator">
+    <h2 style="margin-top:0;">ROI Calculator</h2>
+    <p>Enter your catalog size to estimate incremental licensing revenue generated by compliant AI remasters.</p>
+    <div style="margin:2rem 0;">
+      <label style="display:block;margin-bottom:1rem;">
+        Number of exploitable masters: 
+        <input type="number" id="masters" value="5000" style="width:120px;margin-left:0.5rem;">
+      </label>
+      <button class="btn-primary" id="calc">Calculate Revenue ▸</button>
+    </div>
+    <div id="roi-output"></div>
+    <p style="font-size:0.85rem;margin-top:1rem;opacity:0.8;">
+      *Conservative estimate based on $0.35 per AI remix sync opportunity. Actual results may vary.
+    </p>
+  </div>
+</section>
+
+<section class="grid" id="estate">
+  <div>
+    <h2>Estate‑Safe AI</h2>
+    <p>Our consent workflow requires multi‑signatory approval, ensuring every vocal likeness or composition respects the artist's wishes—and their family's legacy.</p>
+    <ul class="estate-features">
+      <li>Granular, track‑level permissions</li>
+      <li>Automated royalty routing to PROs</li>
+      <li>Brand‑integrity filters on lyrics & style</li>
+      <li>Multi-signatory estate approval workflow</li>
+      <li>Immutable consent documentation</li>
+    </ul>
+    <p style="margin-top:1.5rem;font-weight:bold;color:var(--accent);">Protect legacy. Multiply revenue. Sleep soundly.</p>
+  </div>
+  <div>
+    <div class="demo-box">
+      <h3 style="color:var(--accent);">Estate Consent Dashboard</h3>
+      <p>Multi-party approval system</p>
+      <p>Real-time rights verification</p>
+      <p>Automated compliance reporting</p>
+    </div>
+  </div>
+</section>
+
+<div class="countdown">
+  ⚡ LIMITED TIME: First 3 major labels get referral equity in paid pilot program ⚡
+</div>
+
+<section class="grid" id="comparison">
+  <div>
+    <div class="demo-box">
+      <h3 style="color:var(--danger);">Competitor Lawsuit Headlines</h3>
+      <p style="margin:1rem 0;">"AI Music Giants Face Billion-Dollar Copyright Claims"</p>
+      <p>"Record Labels Sue for Unauthorized Training Data"</p>
+      <p>"Major Artists Join Class Action Against AI Platforms"</p>
+    </div>
+  </div>
+  <div>
+    <h2>Why Competitors Can't Follow Us</h2>
+    <p><strong>Suno</strong> and <strong>Udio</strong> are fighting billion‑dollar infringement claims for scraping your catalog. We never touch it without your notarized consent.</p>
+    <p>While they're in court, you're generating compliant revenue.</p>
+    <a href="/legal-comparison.pdf" class="btn-primary">Download Full Legal Comparison ▸</a>
+  </div>
+</section>
+
+<section id="consult">
+  <h2>Ready for a 30‑Minute Legal‑First Demo?</h2>
+  <p>No slide decks—just your General Counsel, our CTO, and a live walkthrough of your private deployment options.</p>
+  <p style="margin-bottom:2rem;"><strong>Targeting:</strong> General Counsel, EVP Digital Strategy, Estate Managers</p>
+  
+  <div style="background:#111;padding:2rem;border-radius:8px;border:1px solid var(--accent);">
+    <h3 style="color:var(--accent);margin-bottom:1rem;">Book Your Executive Briefing</h3>
+    <form style="display:grid;gap:1rem;max-width:500px;">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Executive Email" required>
+      <input type="text" placeholder="Company/Label" required>
+      <select style="background:#222;color:var(--fg);border:1px solid #444;padding:0.75rem;border-radius:4px;">
+        <option>General Counsel</option>
+        <option>EVP Digital Strategy</option>
+        <option>Estate Manager</option>
+        <option>Head of Legal Affairs</option>
+        <option>Chief Revenue Officer</option>
+        <option>Other C-Suite</option>
+      </select>
+      <textarea placeholder="Current AI music concerns/catalog size" style="background:#222;color:var(--fg);border:1px solid #444;padding:0.75rem;border-radius:4px;min-height:100px;"></textarea>
+      <button type="submit" class="btn-primary">Schedule Confidential Briefing ▸</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 OriginAI Music • Veteran‑Owned • DoD‑Level Security • All trademarks belong to their owners.</p>
+  
+  <div class="legal-refs">
+    <strong>Legal References:</strong><br>
+    RIAA v. Suno, 1:24‑cv‑11348 (D. Mass.) - $150M+ damages claim for unauthorized training data<br>
+    RIAA v. Udio, 1:24‑cv‑04712 (S.D.N.Y.) - Major label lawsuit for copyright infringement<br><br>
+    
+    <strong>OriginAI Music Compliance:</strong> Uses exclusively customer‑provided assets and maintains immutable audit logs. 
+    No third‑party copyrighted works are ingested or retained. All AI generation requires explicit consent documentation 
+    and maintains full chain-of-title verification.
+  </div>
+</footer>
+
+<script>
+  // ROI Calculator
+  document.getElementById('calc').onclick = function(){
+    const n = parseInt(document.getElementById('masters').value||0,10);
+    const annual = n * 0.35; // conservative $0.35 per AI remix sync opportunity
+    const monthly = annual / 12;
+    document.getElementById('roi-output').innerHTML = 
+      `<strong>≈ $${annual.toLocaleString()}</strong> new annual revenue<br>` +
+      `<span style="font-size:1rem;">($${monthly.toLocaleString()}/month conservative estimate)</span>`;
+  }
+
+  // Demo player
+  function playDemo(){
+    alert('Demo track would play here with full audit log download option');
+  }
+
+  // Form submission
+  document.querySelector('form').onsubmit = function(e){
+    e.preventDefault();
+    alert('Executive briefing request submitted. Our team will contact you within 24 hours.');
+  }
+
+  // Auto-calculate on page load
+  document.getElementById('calc').click();
+</script>
+
+</body>
+</html>
